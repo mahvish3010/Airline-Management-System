@@ -1,0 +1,94 @@
+{
+  "info": {
+    "name": "Airline Management System API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-987654321000",
+    "description": "CRUD endpoints for Flights, Passengers, and Bookings",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Flights",
+      "item": [
+        {
+          "name": "Add Flight",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"flightNumber\": \"AI101\", \"destination\": \"Delhi\" }",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "http://localhost:8080/flights", "host": ["localhost"], "port": "8080", "path": ["flights"] }
+          }
+        },
+        {
+          "name": "Get All Flights",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:8080/flights", "host": ["localhost"], "port": "8080", "path": ["flights"] } }
+        },
+        {
+          "name": "Get Flight by ID",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:8080/flights/1", "host": ["localhost"], "port": "8080", "path": ["flights","1"] } }
+        },
+        {
+          "name": "Update Flight",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"destination\": \"Mumbai\" }",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "http://localhost:8080/flights/1", "host": ["localhost"], "port": "8080", "path": ["flights","1"] }
+          }
+        },
+        {
+          "name": "Delete Flight",
+          "request": { "method": "DELETE", "url": { "raw": "http://localhost:8080/flights/1", "host": ["localhost"], "port": "8080", "path": ["flights","1"] } }
+        }
+      ]
+    },
+    {
+      "name": "Passengers",
+      "item": [
+        {
+          "name": "Add Passenger",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"name\": \"John Doe\", \"age\": 30 }",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "http://localhost:8080/passengers", "host": ["localhost"], "port": "8080", "path": ["passengers"] }
+          }
+        },
+        {
+          "name": "Get All Passengers",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:8080/passengers", "host": ["localhost"], "port": "8080", "path": ["passengers"] } }
+        }
+      ]
+    },
+    {
+      "name": "Bookings",
+      "item": [
+        {
+          "name": "Add Booking",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"flightId\": 1, \"passengerId\": 1 }",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "http://localhost:8080/bookings", "host": ["localhost"], "port": "8080", "path": ["bookings"] }
+          }
+        },
+        {
+          "name": "Get All Bookings",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:8080/bookings", "host": ["localhost"], "port": "8080", "path": ["bookings"] } }
+        }
+      ]
+    }
+  ]
+}
