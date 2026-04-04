@@ -1,32 +1,42 @@
-\# Airline Management System API
+\# Airline Management System
 
 
 
-This project contains a Postman collection for the Airline Management System API.
+A Java Swing desktop application built by Mahvish under the guidance of Dr. D. Radhika.  
+
+It features secure login, a clean dashboard, flight selection with multiple airlines and classes, ticket preview, and PNG export.
+
+
+
+\## Tech Stack
+
+\- Java Swing (UI)
+
+\- MySQL / H2 Database
+
+\- Git \& GitHub for version control
+
+\- Postman for API testing
 
 
 
 \## Features
 
-\- CRUD operations for managing airlines and flights
+\- User authentication and secure login
 
-\- Database integration for persistent storage
+\- Flight booking with multiple airlines and classes
 
-\- API testing with Postman
+\- Ticket preview and export as PNG
 
-
-
-\## How to Use
-
-1\. Import the Postman collection from `postman/collections/AirlineAPI.postman\_collection.json`.
-
-2\. Run the requests to test endpoints.
-
-3\. Connect with a database (H2/MySQL) for persistence.
+\- CRUD operations for managing airline data
 
 
 
-\## Author
+\## Setup Instructions
 
-Mahvish – Computer Science Engineering student, Stanley College of Engineering and Technology for Women
+1\. Clone the repository:
+
+&#x20;  ```bash
+
+&#x20;  git clone https://github.com/mahvish3010/Airline-Management-System.git
 
