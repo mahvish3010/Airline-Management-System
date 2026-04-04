@@ -6,6 +6,7 @@ It features secure login, a clean dashboard, flight selection with multiple airl
 ## Tech Stack
 - Java Swing (UI)
 - MySQL / H2 Database
+- External Library: JCalendar (for date selection)
 - Git & GitHub for version control
 - Postman for API testing
 
@@ -16,6 +17,7 @@ It features secure login, a clean dashboard, flight selection with multiple airl
 - CRUD operations for managing airline data
 
 ## Setup Instructions
-1. Clone the repository:
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/mahvish3010/Airline-Management-System.git
